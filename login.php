@@ -20,6 +20,8 @@
             break;
             case 3:
                 echo 'Vous avez été déconnecté du service';
+                session_unset();
+                session_destroy();
             break;
         }
     ?>
