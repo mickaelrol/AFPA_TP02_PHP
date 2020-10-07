@@ -1,0 +1,9 @@
+form{
+    text-align: center;
+    margin: auto;
+}
+div{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
