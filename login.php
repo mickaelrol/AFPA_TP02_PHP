@@ -25,6 +25,11 @@
             break;
         }
     ?>
+
+    <pre>
+        <?php var_dump($_SESSION['erreur']); ?>
+    </pre>
+
     <form action="validation.php" method="POST">
     <div>
         <label for="login">Login : </label>
