@@ -9,15 +9,18 @@
 <body>
     <?php
     session_start();
-        switch ($_SESSION['errorcode']) {
-            case '1':
+    
+        switch ($_SESSION['erreur']) {
+            case 1:
                 echo 'Veuillez saisir un login et un mot de passe';
             break;
 
-            case '2':
+            case 2:
                 echo 'Erreur de login/mot de passe';
             break;
-            
+            case 3:
+                echo 'Vous avez été déconnecté du service';
+            break;
         }
     ?>
     <form action="validation.php" method="POST">
