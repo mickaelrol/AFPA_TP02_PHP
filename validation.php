@@ -24,4 +24,5 @@ if ($login == "" || $mdp == "") {
     // login et mdp correct redirection vers page acceuil.php .
     header('location:acceuil.php');
     exit();
+    
 }
