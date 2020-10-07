@@ -3,7 +3,7 @@
 require 'config.php';
 
 session_start();
-$_SESSION['erreur'];
+$_SESSION['erreur'] ="";
 
 $_SESSION['CONNECT'];
 
@@ -18,6 +18,7 @@ $affaire = $_GET['affaire'];
 if ($affaire == 'deconnexion') {
     $_SESSION['erreur'] = 3;
     header ('Location:login.php');
+    exit();
 }
 
 //ont cree une condition if qui va renvoyer vers 2 page d'erreurs soit si le champ est vide ou si il ne correspond pas au bon login et mdp .
