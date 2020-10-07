@@ -16,9 +16,8 @@ $_SESSION['mdp'] = $_POST['mdp'];
 
 $affaire = $_GET['affaire'];
 if ($affaire == 'deconnexion') {
-    session_unset();
-    session_destroy();
     $_SESSION['erreur'] = 3;
+    header ('Location:login.php');
 }
 
 //ont cree une condition if qui va renvoyer vers 2 page d'erreurs soit si le champ est vide ou si il ne correspond pas au bon login et mdp .
